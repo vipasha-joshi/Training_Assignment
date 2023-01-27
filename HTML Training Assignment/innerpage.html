@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\vipas\OneDrive\Desktop\Project\HTML Training Assignment\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/InnerpageStyle.css">
+    <link rel="stylesheet" href="css/DashboardStyle.css">
+    <script src="C:\Users\vipas\OneDrive\Desktop\Project\HTML Training Assignment\js\bootstrap.bundle.min.js"></script> 
+    <title>Innerpage</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img id="menu" src="images/menu-bar.svg">
+            <img id="header" src="images/header-logo.svg">
+            <nav class="navbar bg-body-tertiary">
+                <form class="container-fluid">
+                <div class="input-group">
+                    <div><img id="search-icon" src="images/search-icon.svg"></div>
+                    <input type="text" class="form-control" placeholder="Search" id="searchbox">
+                </div>
+                </form>
+            </nav>
+            <div class="collapse navbar-collapse">
+                <img id="notification" src="images/notification-icon.svg">
+                <img id="profile" src="images/profile.png">
+                <p id="uname">John Doe</p>
+                <img src="images/downward-arrow.svg">
+            </div>
+        </div>
+    </nav>
+        <div class="container-fluid" id="main">
+            <div class="row row-offcanvas row-offcanvas-left">
+              <div class="col-md-3 col-lg-2 sidebar-offcanvas" id="sidebar" role="navigation">
+                <ul class="nav flex-column pl-1">
+                  <li class="nav-item" id="txt_active"><a class="nav-link"><img id="icon" src="images/dashboard-active.svg"> Dashboard</a></li>
+                  <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/graph-default.svg"> Analysis</a></li>
+                  <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/inbox-default.svg"> Inbox</a></li>
+                  <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/clock-default.svg"> History</a></li>
+                  <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/user-default.svg"> Users</a></li>
+                  <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/maintenance-default.svg"> Maintenance</a></li>
+                  <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/setting-default.svg"> Setting</a></li>
+                </ul>
+              </div>
+              <div>
+                <h2 id="dash">Analysis</h2>
+                <div>
+                    <form>
+                        <p id="title">One Column</p>
+                        <input type="text" placeholder="Name" id="one"><br><br>
+                        <select placeholder="Dropdown"  style="color: #ADADAD;" id="one"><option>Dropdown</option></select><br><br>
+                        <textarea rows="4" cols="10" style="width: 1157px;height: 130px;margin-left: 18px;" placeholder="Multiple Line"></textarea>
+                    </form>
+                    <form>
+                        <p id="title">Two Column</p>
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Name" id="two">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Username" id="two">
+                            </div>
+                          </div><br>
+                        <div class="row">
+                                <div class="col">
+                                    <input type="password" class="form-control" placeholder="Password" name="pswd" id="two">
+                                </div>
+                                <div class="col">
+                                    <select placeholder="Dropdown" style="color: #ADADAD;width: 563px;height: 38px;margin-right: -10px;" id="two"><option>Dropdown</option></select>
+                                </div>
+                        </div>
+                    </form>
+                    <form>
+                        <p id="title">Three Column</p>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Focus" required id="three">
+                            </div>
+                            <div class="col">
+                                <input type="password" class="form-control" placeholder="Password" required id="three">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="john doe" disabled id="three">
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <p id="title">Four Column</p>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Designation" required id="three">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name" required id="three">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="john doe" required id="three">
+                            </div>
+                            <div class="col">
+                                <select placeholder="Dropdown" style="color: #ADADAD;width: 266px;height: 39px;margin-right: -10px;" id="two"><option>Dropdown</option></select>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <p id="title">Other Design Elements</p>
+                        <p id="subtitle">File Upload</p>
+                        <button type="submit" class="btn"><img src="images/cloud-upload-icon.svg">  Upload</button><br><br>
+                        <p id="subtitle">Radio Button</p>
+                        <input type="radio" name="r" id="radio"> Option 1
+                        <input type="radio" name="r" id="radio" checked> Option 2<br><br>
+                        <p id="subtitle">Checkbox</p>
+                        <input type="checkbox" id="radio"> Option 1
+                        <input type="checkbox" id="radio" checked> Option 2<br><br>
+                        <p id="subtitle">Snackbar</p>
+                        <div class="row">
+                            <button type="submit" id="error" class="btn"><img src="images/error-icon.svg" height="20px;" width="20px;"> This is an error message</button>
+                            <button type="submit" id="info" class="btn"><img src="images/info-icon.svg" height="20px;" width="20px;"> This is an information message!</button>
+                        </div><br>
+                        <div class="row">
+                            <button type="submit" id="warn" class="btn"><img src="images/warning-icon.svg" height="20px;" width="20px;"> This is a warning message!</button>
+                            <button type="submit" id="success" class="btn"><img src="images/success-icon.svg" height="20px;" width="20px;"> This is a success message!</button>
+                        </div><br>
+                        <p id="subtitle">Call to action</p>
+                        <button id="prm" > Primary</button>
+                        <button id="scd"> Secondary</button><br><br>
+                        <p id="subtitle">Tabs</p>
+                        
+                            <ul class="nav nav-tabs ml-3" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link" role="tab" data-toggle="tab" style="color:#C8242F" href="tab1"> Tab1</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" role="tab" data-toggle="tab" style="color:#ADADAD"> Tab2</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" role="tab" data-toggle="tab" style="color:#ADADAD"> Tab3</a>
+                            </li>
+                            </ul>
+                            <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugit minus autem voluptas nam sunt quas cum, temporibus libero molestiae perferendis ipsum. Optio, soluta quasi enim voluptatibus sunt architecto laborum?</p> 
+                        
+                    </form>
+
+                </div>
+              </div>
+            </div>
+        </div>
+</body>
+</html>
