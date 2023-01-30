@@ -10,18 +10,16 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-fixed-top navbar-toggleable-sm navbar-inverse mb-3">
         <div class="container-fluid">
             <img id="menu" src="images/menu-bar.svg">
             <img id="header" src="images/header-logo.svg">
-            <nav class="navbar bg-body-tertiary">
-                <form class="container-fluid">
-                <div class="input-group">
+            <form>
+                <div class="collapse navbar-collapse">
                     <div><img id="search-icon" src="images/search-icon.svg"></div>
                     <input type="text" class="form-control" placeholder="Search" id="searchbox">
                 </div>
-                </form>
-            </nav>
+            </form>
             <div class="collapse navbar-collapse">
                 <img id="notification" src="images/notification-icon.svg">
                 <img id="profile" src="images/profile.png">
@@ -30,7 +28,7 @@
             </div>
         </div>
     </nav>
-        <div class="container-fluid" id="main">
+    <div class="container-fluid" id="main">
             <div class="row row-offcanvas row-offcanvas-left">
               <div class="col-md-3 col-lg-2 sidebar-offcanvas" id="sidebar" role="navigation">
                 <ul class="nav flex-column pl-1">
@@ -43,6 +41,7 @@
                   <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/setting-default.svg"> Setting</a></li>
                 </ul>
               </div>
+                
               <div class="col-md-9 col-lg-10 main" id="bg">
                 <h2 id="dash">Dashboard</h2>
                 <div class="flex-container">
