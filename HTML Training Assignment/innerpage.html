@@ -11,19 +11,17 @@
     <title>Innerpage</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-fixed-top navbar-toggleable-sm navbar-inverse mb-3">
         <div class="container-fluid">
             <img id="menu" src="images/menu-bar.svg">
             <img id="header" src="images/header-logo.svg">
-            <nav class="navbar bg-body-tertiary">
-                <form class="container-fluid">
-                <div class="input-group">
+            <form>
+                <div class="collapse navbar-collapse">
                     <div><img id="search-icon" src="images/search-icon.svg"></div>
                     <input type="text" class="form-control" placeholder="Search" id="searchbox">
                 </div>
-                </form>
-            </nav>
-            <div class="collapse navbar-collapse">
+            </form>
+            <div class="collapse navbar-collapse ml-auto">
                 <img id="notification" src="images/notification-icon.svg">
                 <img id="profile" src="images/profile.png">
                 <p id="uname">John Doe</p>
@@ -31,12 +29,12 @@
             </div>
         </div>
     </nav>
-        <div class="container-fluid" id="main">
+    <div class="container-fluid" id="main">
             <div class="row row-offcanvas row-offcanvas-left">
               <div class="col-md-3 col-lg-2 sidebar-offcanvas" id="sidebar" role="navigation">
-                <ul class="nav flex-column pl-1">
-                  <li class="nav-item" id="txt_active"><a class="nav-link"><img id="icon" src="images/dashboard-active.svg"> Dashboard</a></li>
-                  <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/graph-default.svg"> Analysis</a></li>
+                <ul class="nav flex-column pl-1" id="offcanvasNavbar">
+                  <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/dashboard-default.svg"> Dashboard</a></li>
+                  <li class="nav-item" id="txt_active"><a class="nav-link"><img id="icon" src="images/graph-active.svg"> Analysis</a></li>
                   <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/inbox-default.svg"> Inbox</a></li>
                   <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/clock-default.svg"> History</a></li>
                   <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/user-default.svg"> Users</a></li>
@@ -44,7 +42,7 @@
                   <li class="nav-item" id="txt"><a class="nav-link"><img id="icon" src="images/setting-default.svg"> Setting</a></li>
                 </ul>
               </div>
-              <div>
+            <div class="col-md-9 col-lg-10 main">
                 <h2 id="dash">Analysis</h2>
                 <div>
                     <form>
@@ -56,18 +54,18 @@
                     <form>
                         <p id="title">Two Column</p>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-sm mb-2">
                               <input type="text" class="form-control" placeholder="Name" id="two">
-                            </div>
-                            <div class="col">
+                            </div><br>
+                            <div class="col-sm mb-2">
                                 <input type="text" class="form-control" placeholder="Username" id="two">
                             </div>
                           </div><br>
                         <div class="row">
-                                <div class="col">
+                                <div class="col-sm mb-2">
                                     <input type="password" class="form-control" placeholder="Password" name="pswd" id="two">
                                 </div>
-                                <div class="col">
+                                <div class="col-sm mb-2">
                                     <select placeholder="Dropdown" style="color: #ADADAD;width: 563px;height: 38px;margin-right: -10px;" id="two"><option>Dropdown</option></select>
                                 </div>
                         </div>
@@ -75,13 +73,13 @@
                     <form>
                         <p id="title">Three Column</p>
                         <div class="form-row">
-                            <div class="col">
+                            <div class="col-sm mb-2">
                                 <input type="text" class="form-control" placeholder="Focus" required id="three">
                             </div>
-                            <div class="col">
+                            <div class="col-sm mb-2">
                                 <input type="password" class="form-control" placeholder="Password" required id="three">
                             </div>
-                            <div class="col">
+                            <div class="col-sm mb-2">
                                 <input type="text" class="form-control" placeholder="john doe" disabled id="three">
                             </div>
                         </div>
@@ -89,16 +87,16 @@
                     <form>
                         <p id="title">Four Column</p>
                         <div class="form-row">
-                            <div class="col">
+                            <div class="col-sm mb-2">
                                 <input type="text" class="form-control" placeholder="Designation" required id="three">
                             </div>
-                            <div class="col">
+                            <div class="col-sm mb-2">
                                 <input type="text" class="form-control" placeholder="Name" required id="three">
                             </div>
-                            <div class="col">
+                            <div class="col-sm mb-2">
                                 <input type="text" class="form-control" placeholder="john doe" required id="three">
                             </div>
-                            <div class="col">
+                            <div class="col-sm mb-2">
                                 <select placeholder="Dropdown" style="color: #ADADAD;width: 266px;height: 39px;margin-right: -10px;" id="two"><option>Dropdown</option></select>
                             </div>
                         </div>
@@ -115,12 +113,12 @@
                         <input type="checkbox" id="radio" checked> Option 2<br><br>
                         <p id="subtitle">Snackbar</p>
                         <div class="row">
-                            <button type="submit" id="error" class="btn"><img src="images/error-icon.svg" height="20px;" width="20px;"> This is an error message</button>
+                            <button type="submit" id="error" class="btn mb-2"><img src="images/error-icon.svg" height="20px;" width="20px;"> This is an error message</button>
                             <button type="submit" id="info" class="btn"><img src="images/info-icon.svg" height="20px;" width="20px;"> This is an information message!</button>
                         </div><br>
                         <div class="row">
-                            <button type="submit" id="warn" class="btn"><img src="images/warning-icon.svg" height="20px;" width="20px;"> This is a warning message!</button>
-                            <button type="submit" id="success" class="btn"><img src="images/success-icon.svg" height="20px;" width="20px;"> This is a success message!</button>
+                            <button type="submit" id="warn" class="btn mb-2"><img src="images/warning-icon.svg" height="20px;" width="20px;"> This is a warning message!</button>
+                            <button type="submit" id="success" class="btn mb-2"><img src="images/success-icon.svg" height="20px;" width="20px;"> This is a success message!</button>
                         </div><br>
                         <p id="subtitle">Call to action</p>
                         <button id="prm" > Primary</button>
